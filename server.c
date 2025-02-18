@@ -30,3 +30,8 @@ int main()
                 printf("\nReceived from Client[IP%s,TCP PORT%d]",inet_ntoa(cli_addr.sin_addr),ntohs(cli_addr.sin_port));
                 close(newsd);
         }
+
+        close(sd);
+        printf("\n\n");
+}
+
